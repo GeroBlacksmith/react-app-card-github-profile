@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { CardList } from './CardList';
 import './style.css';
-
+const testData = [{
+  name: "Gero",
+  company:"Nrwl",
+  avatar_url:"https://avatars3.githubusercontent.com/u/7440621?v=4"
+}];
 class App extends Component {
   render() {
     return (

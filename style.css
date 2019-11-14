@@ -1,3 +1,10 @@
 h1, p {
   font-family: Lato;
 }
+.github-profile{
+  display: flex;
+}
+.github-profile img{
+  width: 75px;
+  height: 75px; 
+}

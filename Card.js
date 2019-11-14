@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import './style.css';
+
 export class Card extends Component{
   render(){
+  // const profile = testData[0];
+  const profile = this.props;
     return (
-      <div classname="github-profile">
-        <img src="https://placehold.it/75" />
+      <div className="github-profile">
+        <img src={profile.avatar_url} />
         <div clasName="info">
-          <div classNmae="name">Name</div>
-          <div className="company">Company</div>
+          <div className="name">{profile.name}</div>
+          <div className="company">{profile.company}</div>
         </div>
       </div>
     )
