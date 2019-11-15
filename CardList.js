@@ -7,7 +7,7 @@ export const CardList=(props)=>(
   <div>
     { 
       props.profiles.map( 
-        profile => <Card {...profile}/> 
+        profile => <Card key={profile.id} {...profile}/> 
       ) 
     }
   </div>
